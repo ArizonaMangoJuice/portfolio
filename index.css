@@ -41,6 +41,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #3f3f3f;
 }
 
 .nav-button{
@@ -57,6 +58,16 @@ footer{
     background: #ededed;
     color: #898989;
     border: 2px solid #898989;
+}
+
+.headline-bio{
+    padding: 1.5em;
+    color: #ededed;
+}
+
+.projects{
+    padding: 1.5em;
+    color: #ededed;
 }
 
 #icon{
