@@ -17,8 +17,6 @@ function main (){
         let sectionName = $(this).html();
         openSection(sectionName);
     });
-
-
 };
 
 $(main);
