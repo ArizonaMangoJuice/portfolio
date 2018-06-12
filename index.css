@@ -66,8 +66,10 @@ footer{
 }
 
 .projects{
-    padding: 1.5em;
+    padding: 1em;
     color: #ededed;
+    display: flex;
+    flex-direction: column;
 }
 
 #icon{
@@ -93,3 +95,48 @@ footer{
 .hidden{
     display: none;
 }
+
+.card{
+    border: 1px solid #ededed;
+    width: 100%;
+    margin: auto;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/51yXB%2BW5RcL.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    min-height: 350px;
+    max-height: 350px;
+    position: relative;
+    color: #ededed;
+    /* box-shadow: 0 1px 3px #ededed, 0 1px 2px #ededed; */
+    /* transition: all 0.3s cubic-bezier(.25,.8,.25,1); */
+    margin-bottom: 1em;
+  }
+  
+  .title{
+    background: white;
+    padding: 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    width: 100%;
+    background: #707070;
+    /* border-bottom: 1px solid #ededed; */
+  }
+
+  .title a {
+    text-decoration: none;
+    color: white;
+    padding: .7em;
+    display: block;
+  }
+  
+  .card-summary{
+    background: white;
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    margin: 0;
+    background: #707070;
+    /* border-top: 1px solid #ededed; */
+  }
