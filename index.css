@@ -37,7 +37,7 @@ header{
 }
 
 footer{
-    background: white;
+    background: #ededed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,8 +56,8 @@ footer{
     margin: .2em;
     padding: 1em;
     background: #ededed;
-    color: #898989;
-    border: 2px solid #898989;
+    color: #3f3f3f;
+    border: 2px solid #3f3f3f;
 }
 
 .headline-bio{
@@ -108,9 +108,9 @@ footer{
   
   .project-one{
    background: url(./images/lol-improver\ dashboard-cropped.png);
-   background-size: 350px;
+   background-size: 310px;
    background-repeat: no-repeat;
-   background-position: 20% -10%;  
+   background-position: 50% -10%; 
 }
   
   .wrapper{
@@ -141,3 +141,22 @@ footer{
     border-right: 1px solid #ededed;
   }
   
+
+  .contact{
+    color: #ededed;
+  }
+
+  .social-buttons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-buttons a{
+      font-size: 1.3em;
+      padding: 1em;
+      color: #ededed;
+  }
+
+  #contact{
+      padding: 1.5em;
+  }
