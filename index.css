@@ -96,17 +96,15 @@ footer{
     display: none;
 }
 
-
-
-
-  .card {
-    border: 1px solid #ededed;
+.card {
     width: 100%;
     height: 450px;
     box-sizing: border-box;
-  }
+    margin-bottom: 1em;
+    border: 1px solid #3f3f3f;
+}
   
-  .project-one{
+.project-one{
    background: url(./images/lol-improver\ dashboard-cropped.png);
    background-size: 310px;
    background-repeat: no-repeat;
@@ -119,13 +117,14 @@ footer{
   }
   
   .data{
-    position: absolute; 
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #707070;
-    color: #ededed;
     padding: 1em;
+    background: #ededed;
+    color: #3f3f3f;
+    border-top: 1px solid #3f3f3f;
   }
   
   .card-link{
@@ -133,12 +132,12 @@ footer{
   }
   
   .card-link a{
-    color: #ededed;
+    color: #3f3f3f;
     padding: 1em;
   }
   
   .card-link a:first-child{
-    border-right: 1px solid #ededed;
+    border-right: 1px solid #3f3f3f;
   }
   
 
@@ -159,4 +158,75 @@ footer{
 
   #contact{
       padding: 1.5em;
+  }
+
+  @media only screen and (min-width: 768px){
+    #projects{
+        flex-direction: column;
+    }
+
+    .card{
+      margin: 1em;
+      height: 635px;
+      border: 1px solid #3f3f3f;
+    }
+
+    .section{
+      max-width: 65%;
+      margin: auto;
+    }
+
+    .project-one{
+      background-size: 100%;
+      background-position: 50% -5%;
+    }
+
+    .data{
+        background: #ededed;
+        color: #3f3f3f;
+    }
+
+    .card-link a{
+        color: #3f3f3f;
+    }
+
+    .card-link a:first-child {
+      border-right: 1px solid #707070;
+    }
+}
+
+
+  @media only screen and (min-width: 1024px){
+      #projects{
+          flex-direction: column;
+      }
+
+      .card{
+        margin: 1em;
+        height: 800px;
+        border: 1px solid #3f3f3f;
+      }
+
+      .section{
+        max-width: 65%;
+        margin: auto;
+      }
+
+      .project-one{
+        background-size: 100%;
+        background-position: 50% -5%;
+      }
+
+      .data{
+          background: #ededed;
+          color: #3f3f3f;
+      }
+
+      .card-link a{
+          color: #3f3f3f;
+      }
+
+      .card-link a:first-child {
+        border-right: 1px solid #707070;
+    }
   }
