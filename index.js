@@ -8,8 +8,16 @@ function openSection(sectionName){
     let name = standardize(sectionName);
 
     $('.section').css('display', 'none')
+    
+    if ( $(window).width() > 739 && name === 'projects') {    
 
-    $(`#${name}`).css('display', 'block');
+        $(`#${name}`).css('display', 'flex');  
+
+    } else {
+
+        $(`#${name}`).css('display', 'block');
+
+    }
 }
 
 function main (){
