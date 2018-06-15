@@ -1,9 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 html{
     background: #707070;
     font-family: 'Sunflower', sans-serif;
-    /* height: 100vh; */
 }
-/* //position absolute left right bottom 0 */
 body{
     margin: 0;
     min-height: 100vh;
@@ -13,12 +14,10 @@ body{
 main{
     display: flex;
     padding-bottom: 200px;  
-    /* flex-flow: row wrap; */
     font-weight: bold;    
     flex-direction: column;
     margin: 0 auto;
     min-height: 60vh;
-    /* text-align: center; */
     flex: 1 100%;
     justify-content: center;
     align-items: center;
@@ -31,7 +30,6 @@ nav{
 }
 
 bocy > * {
-    /* padding: 10px; */
     flex: 1 100%;
 }
 
@@ -119,7 +117,16 @@ footer{
     margin-bottom: 1em;
     box-sizing: border-box;
 }
-  
+
+.header{
+    background: #ededed;
+    display: flex;
+    padding: .2em;
+    width: 89.9%;
+    margin: auto;
+    border: 1px solid #ededed;
+}
+
 .project-one{
    background: url(./images/lol-improver\ dashboard-cropped.png);
    background-size: 90%;
@@ -134,12 +141,13 @@ footer{
   
   .data{
     position: absolute;
-    bottom: 0;
+    top: 237px;    
     left: 0;
     right: 0;
     padding: 1em;
     background: #ededed;
     color: #3f3f3f;
+    max-height: 177.83px;
   }
   
   .card-link{
@@ -148,11 +156,12 @@ footer{
   
   .card-link a{
     color: #3f3f3f;
-    padding: 1em;
+    padding: .4em;
   }
   
   .card-link a:first-child{
     border-right: 1px solid #3f3f3f;
+    padding-right: .7em;
   }
   
 
@@ -190,6 +199,14 @@ footer{
       width: 288px;
   }
 
+  .tech-icons{
+    height: 2.2em;
+  }
+
+  .content h2 {
+    margin: .3em;
+  }
+
   @media only screen and (min-width: 768px){
     #projects{
         flex-direction: column;
@@ -217,6 +234,7 @@ footer{
     }
 
     .data{
+        top: 392px;
         background: #ededed;
         color: #3f3f3f;
     }
@@ -257,6 +275,7 @@ footer{
       }
 
       .data{
+          top: 572px;
           background: #ededed;
           color: #3f3f3f;
       }
@@ -285,14 +304,10 @@ footer{
         width: 665px;
     }
 
-    .section{
-        /* width: 800px; */
-    }
-
     #projects{
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 1400px;
+        max-width: 1440px;
     }
 
     .card{
