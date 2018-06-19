@@ -25,8 +25,9 @@ main{
 
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 }
 
 bocy > * {
@@ -60,6 +61,7 @@ footer{
     background: #898989;
     color: #ededed;
     border: 2px solid #898989;
+    padding: 1em;
 }
 
 .nav-button:hover{
@@ -70,9 +72,25 @@ footer{
     border: 2px solid #3f3f3f;
 }
 
+.nav-button:focus{
+    margin: .2em;
+    padding: 1em;
+    background: #ededed;
+    color: #3f3f3f;
+    border: 2px solid #3f3f3f;
+}
+
 .headline-bio{
     padding: 1.5em;
     color: #ededed;
+}
+
+.headline-bio img {
+    display: block;
+    height: 150px;
+    width: 150px;
+    border-radius: 15%;
+    /* margin: auto; */
 }
 
 .projects{
@@ -100,10 +118,6 @@ footer{
 
 #logo{
     padding: 3em;
-}
-
-.nav-button{
-    padding: 1em;
 }
 
 .hidden{
@@ -180,6 +194,14 @@ footer{
       color: #ededed;
   }
 
+  .social-buttons a:hover{
+    color: #898989;
+  }
+
+  .social-buttons a:focus{
+    color: #898989;
+  }
+
   #contact{
       padding: 1.5em;
   }
@@ -210,6 +232,10 @@ footer{
   @media only screen and (min-width: 768px){
     #projects{
         flex-direction: column;
+    }
+
+    nav{
+        justify-content: center;
     }
 
     .triangle{
@@ -250,12 +276,18 @@ footer{
     .wrapper{
         width: 499px;
     }
+    
+    
 }
 
 
   @media only screen and (min-width: 1024px){
       #projects{
           flex-direction: column;
+      }
+
+      nav{
+        justify-content: center;
       }
 
       .card{
@@ -302,6 +334,10 @@ footer{
   @media only screen and (min-width: 1600px){
     .wrapper{
         width: 665px;
+    }
+
+    nav{
+        justify-content: center;
     }
 
     #projects{
