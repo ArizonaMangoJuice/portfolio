@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Isael Lizama</title>
     <link rel="icon" type="image/png" href="./images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="preload">
     <header role="banner">
         <section id="logo" role="region">
             <a href='index.html' >
@@ -18,15 +19,15 @@
             </a> 
         </section>
         <nav role="navigation">
-                <button class="nav-button">Isael Lizama</button>
+                <button class="nav-button">Home</button>
                 <button class="nav-button">Projects</button>
-                <button class="nav-button">Contact</button>    
+                <!-- <button class="nav-button">Contact</button>     -->
             </nav>
     </header>
     <main>
         <section role="region">
-            <section class="headline-bio section" id='isaellizama'>
-                    <img src="./images/me.png" alt="">
+            <section class="headline-bio section" id='home'>
+                    <img src="./images/me.png" alt="A picture showing isaels face">
                     <h1>Hi, my name is <span>Isael Lizama</span></h1>
                     <h1>I'm a <span>MERN</span> developer</h1>
                     <p>
@@ -40,33 +41,58 @@
                     </p>
             </section>
             <section role="region" class="projects section hidden" id='projects'>
-                <article class='card'>
-                    <section class='wrapper project-one'>
-                        <section class='header'>
+                <article class='test'>
+                    <section class='wrapper project-one relative'>
+                        <!-- <section class='header'>
+  //under construction!!
+
                             <img src="./images/reactIcon.png"  class='tech-icons' alt="react icon">
                             <img src="./images/express.png"  class='tech-icons' alt="express icon">
                             <img src="./images/mongodb.png"  class='tech-icons' alt="mongodb icon">
                             <img src="./images/html.png"  class='tech-icons' alt="html icon">
                             <img src="./images/javascript.png"  class='tech-icons' alt="javascript icon">
                         </section>
-                        <div class="triangle"></div>
-                        <section class='data'>
+                        <div class="triangle"></div> -->
+                        <!-- <section class='data'> -->
+                            <a href="" class="project-link">
+                                <img class='project-image' src="../portfolio/images/new-lol-image.png" alt="lol-improver image">
+                            </a>
+                            <section class="absolute-card hidden">
+                                <span class="span-absolute">Lol-improver</span>
+                            </section>
                             <section class='content'>
                                 <h2>Lol-improver</h2>
-                                <p class='text'>
-                                    This web app allows you to take notes of characters you play and
-                                    see recent stats of players.
-                                </p>
-                                <section class='card-link'>
-                                    <a href='https://focused-nightingale-b297e9.netlify.com/' target="_blank" target="_blank">Live</a>
-                                    <a href='https://github.com/ArizonaMangoJuice/lol-improver-client' target="_blank" target="_blank">Repo</a>
-                                </section>
                             </section>
-                        </section>
+                        <!-- </section> -->
                     </section>
                 </article>
-                <article class='card'>
-                        <section class='wrapper project-two'>
+                <article class='test'>
+                        <section class='wrapper project-two relative'>
+                                <!-- <section class='header'>
+  //under construction!!
+
+                                    <img src="./images/reactIcon.png"  class='tech-icons' alt="react icon">
+                                    <img src="./images/express.png"  class='tech-icons' alt="express icon">
+                                    <img src="./images/mongodb.png"  class='tech-icons' alt="mongodb icon">
+                                    <img src="./images/html.png"  class='tech-icons' alt="html icon">
+                                    <img src="./images/javascript.png"  class='tech-icons' alt="javascript icon">
+                                </section>
+                                <div class="triangle"></div> -->
+                                <!-- <section class='data'> -->
+                                    <a href="" class="project-link">
+                                        <img class='project-image' src="../portfolio/images/new-brick-breaker.png" alt="lol-improver image">
+                                    </a>
+                                    <section class="absolute-card hidden">
+                                        <span class="span-absolute">Brick Breaker</span>
+                                    </section>
+                                    <section class='content'>
+                                        <h2>Brick Breaker</h2>
+                                    </section>
+                                <!-- </section> -->
+                            </section>
+                        <!-- <section class='wrapper project-two'>
+  //under construction!!
+
                             <section class='header'>
                                 <img src="./images/kivy.png"  class='tech-icons' alt="kivy icon">
                                 <img src="./images/python.png"  class='tech-icons' alt="python icon">
@@ -84,9 +110,11 @@
                                     </section>
                                 </section>
                             </section>
-                        </section>
+                        </section> -->
                     </article>
-                    <article class='card'>
+                    <!-- <article class='card'>
+  //under construction!!
+
                             <section class='wrapper project-one'>
                                 <section class='header'>
                                     <img src="./images/reactIcon.png"  class='tech-icons' alt="">
@@ -110,7 +138,7 @@
                                     </section>
                                 </section>
                             </section>
-                        </article>
+                        </article> -->
             </section>
             <section role="region" class="section hidden" id="contact">
                <article class="contact">
@@ -129,6 +157,12 @@
         </section>
     </main>
     <footer role="contentinfo">
+            <article class="social-buttons">
+                    <a href="mailto:hello@isaellizama.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                    <a href="https://github.com/ArizonaMangoJuice?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/isael-lizama-9a128b130/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/ArizonaMJuice" target="_blank"><i class="fab fa-twitter"></i></a>
+            </article>
             <p>&copy; 2018 Isael Lizama</p>
         </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
