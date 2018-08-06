@@ -156,7 +156,7 @@ footer{
     background-color: rgb(112, 112, 112);
     margin: 0 auto;
     text-decoration: none; 
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 #logo{
@@ -181,13 +181,13 @@ footer{
     padding: .2em;
     width: 89.9%;
     margin: auto;
-    border: 1px solid #ededed;
+    /* border: 1px solid #ededed; */
 }
 
 .project-one{
     border-radius: 4px;
     /* border: 1px solid rgba(0,0,0,.01); */
-    margin: 1.6em 0;
+    margin: 1.65em 0;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
@@ -379,7 +379,7 @@ footer{
       /* background-size: 84.6%; */
       /* background-position: 50% -5%; */
       border-radius: 4px;
-      border: 1px solid rgba(0,0,0,.01);
+      /* border: 1px solid rgba(0,0,0,.01); */
       margin: 1.6em 0;
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     }
@@ -456,10 +456,10 @@ footer{
         margin: auto;
       }
 
-      .wrapper {
+      /* .wrapper {
         width: 300px;
-        /* height: 400px; */
-        }
+        height: 400px;
+        } */
 
       nav{
         justify-content: center;
@@ -510,11 +510,20 @@ footer{
           width: 80%;
       }
 
+      .project-image{
+        height: 600px;
+        object-fit: fill;
+      }
+
   }
 
   @media only screen and (min-width: 1600px){
     .wrapper{
-        width: 665px;
+        /* width: 665px; */
+    }
+
+    .project-image{
+      height: 800px;
     }
 
     nav{
