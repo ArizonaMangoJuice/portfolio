@@ -10,14 +10,29 @@ function openSection(sectionName){
 
   $('.section').css('display', 'none');
     
-  if ( $(window).width() > 739 && name === 'projects') {    
+  if ( $(window).width() > 610 && name === 'projects') {    
     console.log($(`#${name}`).children());
     if(name === 'projects'){
-       $(`#${name}`).css('display', 'flex');
-       $(`#${name}`).addClass('.grid-projects')
-    } else {
       $(`#${name}`).css('display', 'flex');
-    };  
+      $(`#${name}`)
+        .addClass('.grid-projects');
+    } else {
+      $(`#${name}`).css('display', 'block');
+    } 
+    
+    $(window).on('resize', function(){
+      var win = $(this); //this = window
+      if (win.height() >= 610) { 
+        if(name === 'projects'){
+          $(`#${name}`).css('display', 'flex');
+          $(`#${name}`)
+            .addClass('.grid-projects');
+        } else {
+          $(`#${name}`).css('display', 'block');
+        } 
+      }
+      // if (win.width() >= 1280) { /* ... */ }
+    });
 
   } else {
 
