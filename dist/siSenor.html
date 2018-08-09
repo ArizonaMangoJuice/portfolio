@@ -5,56 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Si Senor</title>
-  <link rel="icon" type="image/png" href="../images/siSenorFav.png">
+  <link rel="icon" type="image/png" href="img/siSenorFav.png">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/lolImprover.css">
+  <link rel="stylesheet" href="css/lolImprover.css">
 </head>
 <body>
   <header role="banner">
         <section id="logo" role="region">
-            <a href='../index.html' >
-                <img id="icon" src="../images/croppedIsaelLogoold.png" alt="greater than and slash logo">
+            <a href='index.html' >
+                <img id="icon" src="img/croppedIsaelLogoold.png" alt="greater than and slash logo">
             </a> 
         </section>
         <nav role="navigation">
-                <a href="../index.html"><button class="nav-button">Projects</button></a>
+                <a href="index.html"><button class="nav-button">Projects</button></a>
             </nav>
   </header>
   <div class="content">
     <div class="image-block">
       <div>
-        <img src="../images/spanish flag.png" alt="banner picture of the app LoL Improver">
+        <img src="img/spanish flag.png" alt="banner picture of the app LoL Improver">
       </div>
     </div>
     <div class="outer-main-content">
        <div class="inner-main-content">
           <div>
              <div>
-                <h2 class="project-title">Improve your gaming skills</h2>
+                <h2 class="project-title">Learn Some Spanish</h2>
                 <p>
-                  <a target="_blank" href="https://focused-nightingale-b297e9.netlify.com/">Lol Improver</a>&nbsp;
-                  is an app that lets you take notes on champions. 
-                  Allowing you to see which champions you struggle against. 
-                  Lol Improver lets you find player statistics.
-                  This app user React, MongoDB, Express, and mocha, chai, enzyme and, jest.
+                  <a target="_blank" href="https://focused-nightingale-b297e9.netlify.com/">Si Senor</a>&nbsp;
+                  is an app that lets you memorize spanish words. 
+                  Allowing you to see words you don't understand more often than the words you already know. 
+                  This app uses React, MongoDB, Express, and mocha, chai, enzyme and, jest.
                 </p>
                 <div>
                     <div class="blank-div">&nbsp;</div>
                  </div>
                 <h3>CHALLENGES</h3>
-                <p>I had to see if the riot api allowed you to grab static data:</p>
+                <p>The biggest challenge was seeing if we can implement a algorithm that showed wrong answers more often than right:</p>
                 <ul>
-                   <li>Champion data</li>
-                   <li>Champion picture url</li>
-                   <li>Being able to search for players</li>
+                   <li>started simple, used an array and pushed back the answer if the user answered correctly</li>
+                   <li>We later used a linked list that moved instead of an array</li>
+                   <li>The final algorithm we used was a linked list that used a memory value to push the word m spots if correct and push the 1 spot if answered wrong</li>
                 </ul>
-                <p>After looking over the api documentation I was able:</p>
+                <p>After figuring out the algorithm all we had to do on the client side was:</p>
                 <ul>
-                   <li>to grab all champion static data and save it to the database</li>
-                   <li>to grab a players info and save it to the database</li>
+                   <li>Create word card</li>
+                   <li>Create login form</li>
+                   <li>Create sign up form</li>
                 </ul>
-                <p class="biggest-task">Making the least amount of api calls was the biggest priority</p>
              </div>
           </div>
           <div>
@@ -64,7 +63,7 @@
              <div>
                 <h3>SOLUTIONS</h3>
                 <p>
-                  The first thing I did was save to the static data I got from the api in a json file.
+                  The first thing we did was create the algorithm.
                   After, I Created models for the player and the user.
                   With those out of the way I was able to add notes to the champions of the user fairly easily.
                   Lastly I added authentication to my endpoints, except for the player search.
