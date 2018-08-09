@@ -2,6 +2,7 @@
 
 function standardize(name){
   name = name.replace(/\s/g, '').toLowerCase();
+  console.log(name);
   return name;
 }
 
@@ -51,7 +52,7 @@ function main (){
     let sectionName = $(this).html();
     $('.nav-button').removeClass('.nav-focus');
     $(this).addClass('.nav-focus');
-    console.log($(this));
+    // console.log($(this));
     openSection(sectionName);
   });
 }
