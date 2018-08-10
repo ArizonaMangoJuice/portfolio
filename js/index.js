@@ -12,7 +12,6 @@ function openSection(sectionName) {
   $('.section').css('display', 'none');
 
   if ($(window).width() > 610 && name === 'projects') {
-    console.log($(`#${name}`).children());
     if (name === 'projects') {
       $(`#${name}`).css('display', 'flex');
       $(`#${name}`)
