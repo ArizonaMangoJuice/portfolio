@@ -6,8 +6,9 @@ function standardize(name) {
 }
 
 function openSection(sectionName) {
+  if(sectionName === 'Resume') return;
   let name = standardize(sectionName);
-
+  
   $('.section').css('display', 'none');
 
   if ($(window).width() > 610 && name === 'projects') {
