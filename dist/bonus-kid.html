@@ -24,7 +24,7 @@
   <div class="views-content">
     <div class="image-block">
       <div>
-        <img src="img/child-banner.png" alt="banner picture of the app LoL Improver">
+        <img src="img/bonus-kid-banner.png" alt="banner picture of the app bonus kid">
       </div>
     </div>
     <div class="outer-main-content">
@@ -33,26 +33,24 @@
              <div>
                 <h2 class="project-title">Treat Your Children</h2>
                 <p>
-                  <a target="_blank" href="https://focused-nightingale-b297e9.netlify.com/">Si Senor</a>&nbsp;
-                  is an app that lets you memorize spanish words. 
-                  Allowing you to see words you don't understand more often than the words you already know. 
+                  <a target="_blank" href="https://focused-nightingale-b297e9.netlify.com/">Bonus Kid</a>&nbsp;
+                  is an app that lets parents give incentives to their kids. 
+                  The parent can add tasks and rewards to each child they have. 
+                  The child can send a response saying they have completed the task or buy a reward from the store the parent has made.
                   This app uses React, MongoDB, Express, and mocha, chai, enzyme and, jest.
                 </p>
                 <div>
                     <div class="blank-div">&nbsp;</div>
                  </div>
                 <h3>CHALLENGES</h3>
-                <p>The biggest challenge was seeing if we can implement a algorithm that showed wrong answers more often than right:</p>
+                <p>The biggest challenge was having a parent to child relationship in the backend:</p>
                 <ul>
-                   <li>started simple, used an array and pushed back the answer if the user answered correctly</li>
-                   <li>We later used a linked list that moved instead of an array</li>
-                   <li>The final algorithm we used was a linked list that used a memory value to push the word m spots if correct and push the 1 spot if answered wrong</li>
+                   <li>We had to create a parent model and have it reference the child</li>
+                   <li>We had to create a child model and have it reference the parent</li>
                 </ul>
-                <p>After figuring out the algorithm all we had to do on the client side was:</p>
+                <p>After finishing the parent and child relationship the front end was making to many calls to the backend:</p>
                 <ul>
-                   <li>Create word card</li>
-                   <li>Create login form</li>
-                   <li>Create sign up form</li>
+                   <li>The client side had to create a for loop to call the rewards, children and tasks</li>
                 </ul>
              </div>
           </div>
@@ -63,19 +61,21 @@
              <div>
                 <h3>SOLUTIONS</h3>
                 <p>
-                  The first thing we did was create the algorithm and a basic client side.
-                  Once the algorithm was working properly we started working on the client side.
-                  We decided to just have a card that gets updated dynamically.
-                  The card also shows you how many questions you have answered so far.
+                  We started with a parent model, added the functionality it needed
+                  We changed the whole backend to just send authTokens.
+                  Each endpoint was updated to update the database and give back an updated authToken.
                 </p>
              </div>
           </div>
           <div class="image-block">
               <section>
-                <img src="img/siSenorDashboard.png" alt="">
+                <img src="img/bonusKidParent.png" alt="">
               </section>  
               <section>
-               <img src="img/siSenorSignUp.png" alt="">
+               <img src="img/bonusKidChild.png" alt="">
+              </section> 
+              <section>
+                <img src="img/bonusKidRewards.png" alt="">
               </section> 
              </div>
           <div>
@@ -85,8 +85,11 @@
              <div>
                 <h3>RESULTS</h3>
                 <p>
-                  It was really fun working with a partner. You can find his repo <a target="_blank" href="https://github.com/Csprier">here</a>.
-                  We worked on the front end and back end evenly, I hope i get to work with him again.
+                  The end result was a working app that allowed a parent to have children. The parent is able to add tasks and rewards to specific children.
+                  The child can submit that a task and buy something from the shop if they have enough points. This app was made in a group, you can check them out 
+                  here. <a target="_blank" href="https://github.com/mckoyd">Dominick</a>  <a target="_blank" href="https://github.com/tammyztian">Tammy</a>  <a target="_blank" href="https://github.com/darrenrjones">Darren</a>
+                  Working with a group helped better understand agile development.
+                  I worked on the back end and front end on this project.
                 </p>
              </div>
           </div>
