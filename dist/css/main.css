@@ -1,8 +1,6 @@
 * {
   box-sizing: border-box; }
 
-html {
-  /* background: #707070; */ }
 
 body {
   margin: 0;
@@ -101,8 +99,7 @@ footer {
   padding: 1em;
   /* background: #ededed; */
   color: #004175;
-  outline: 0;
-  /* bad practice remove it for accessability reasons */ }
+ }
 
 .headline-bio {
   padding: 1.5em;
