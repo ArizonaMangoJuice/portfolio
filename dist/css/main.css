@@ -87,7 +87,8 @@ footer {
   padding: 1em;
   cursor: pointer;
   font-size: 1em;
-  min-width: 100px; }
+  min-width: 100px;
+  text-decoration: none; }
 
 .nav-button:hover {
   margin: .2em;
