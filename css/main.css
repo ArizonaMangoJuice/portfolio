@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box; }
 
+html {
+  /* background: #707070; */ }
 
 body {
   margin: 0;
@@ -12,9 +14,10 @@ body {
   letter-spacing: .04em;
   text-rendering: optimizeLegibility; }
 
-/* 
-//under construction!!
-*/
+.anchor-text {
+  font-size: 0;
+  text-indent: -9999px; }
+
 main {
   display: flex;
   font-weight: bold;
@@ -99,7 +102,8 @@ footer {
   padding: 1em;
   /* background: #ededed; */
   color: #004175;
- }
+  outline: 0;
+  /* bad practice remove it for accessability reasons */ }
 
 .headline-bio {
   padding: 1.5em;
@@ -275,9 +279,10 @@ footer {
     align-items: center;
     padding: 1em; }
   .social-buttons a {
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 1em;
-    color: black; } }
+    color: black;
+    height: 80px; } }
 
 @media only screen and (min-width: 610px) {
   main section {
@@ -560,6 +565,8 @@ nav {
     align-items: center;
     padding: 1em; }
   .social-buttons a {
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 1em;
-    color: black; } }
+    color: black; }
+  .anchor-tags {
+    font-size: 0; } }
