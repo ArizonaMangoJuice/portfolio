@@ -18,10 +18,10 @@ body{
   text-rendering: optimizeLegibility;
 }
 
-/* 
-//under construction!!
-*/
-
+.anchor-text{
+  font-size: 0;
+  text-indent: -9999px;
+}
 
 
 main{
@@ -343,9 +343,10 @@ footer{
   }
 
   .social-buttons a {
-      font-size: 1.2em;
+      font-size: 1.1em;
       padding: 1em;
       color: black;
+      height: 80px;
   }
 }
 
