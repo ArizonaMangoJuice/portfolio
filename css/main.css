@@ -14,6 +14,15 @@ body {
   letter-spacing: .04em;
   text-rendering: optimizeLegibility; }
 
+h1 {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold; }
+
 .anchor-text {
   font-size: 0; }
 
