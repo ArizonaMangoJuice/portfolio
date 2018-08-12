@@ -567,6 +567,7 @@ nav {
   .social-buttons a {
     font-size: 1.1em;
     padding: 1em;
-    color: black; }
+    color: black;
+    text-decoration: none; }
   .anchor-tags {
     font-size: 0; } }
