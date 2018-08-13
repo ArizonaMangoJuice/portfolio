@@ -1,3 +1,12 @@
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px; }
+
 * {
   box-sizing: border-box; }
 
@@ -10,15 +19,6 @@ body {
   min-height: 100vh;
   position: relative;
   text-rendering: optimizeLegibility; }
-
-h1 {
-  display: block;
-  font-size: 2em;
-  font-weight: bold;
-  -webkit-margin-before: 0.67em;
-  -webkit-margin-after: 0.67em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px; }
 
 .anchor-text {
   font-size: 0; }
@@ -39,18 +39,8 @@ main {
 .absolute {
   position: absolute; }
 
-.absolute-card {
-  background: rgba(0, 65, 117, 0.9);
-  color: white;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%; }
-
-.span-absolute {
-  left: 43%;
-  position: absolute;
-  top: 50%; }
+.hidden {
+  display: none; }
 
 nav {
   align-items: center;
@@ -60,24 +50,6 @@ nav {
 
 .nav-focus {
   color: #004175; }
-
-header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 1em; }
-
-footer {
-  align-items: center;
-  bottom: 0;
-  color: #004175;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  left: 0;
-  padding: 1em;
-  position: absolute;
-  right: 0; }
 
 .nav-button {
   background: #fff;
@@ -98,9 +70,26 @@ footer {
 .nav-button:focus {
   color: #004175;
   margin: .2em;
-  outline: 0;
-  /* bad practice remove it for accessability reasons */
   padding: 1em; }
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em; }
+
+.absolute-card {
+  background: rgba(0, 65, 117, 0.9);
+  color: white;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.span-absolute {
+  left: 43%;
+  position: absolute;
+  top: 50%; }
 
 .headline-bio {
   color: black;
@@ -144,9 +133,6 @@ footer {
 
 #logo {
   padding: 1.5em; }
-
-.hidden {
-  display: none; }
 
 .card {
   width: 290px;
@@ -198,30 +184,6 @@ footer {
 .contact {
   color: black; }
 
-.social-buttons {
-  display: flex;
-  justify-content: center; }
-
-.social-buttons a {
-  font-size: 1.9em;
-  padding: 1em;
-  color: black; }
-
-.social-buttons a:nth-child(4):hover {
-  color: #1da1f2; }
-
-.social-buttons a:nth-child(1):hover {
-  color: #f21d37; }
-
-.social-buttons a:nth-child(3):hover {
-  color: #0077b5; }
-
-.social-buttons a:nth-child(3):focus {
-  color: #0077b5; }
-
-.social-buttons a:nth-child(4):focus {
-  color: #1da1f2; }
-
 #contact {
   padding: 1.5em; }
 
@@ -246,6 +208,12 @@ footer {
 
 .test {
   margin: 6vw 2vw; }
+
+.grid-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 800px; }
 
 @media only screen and (min-width: 100px) {
   nav {
@@ -321,12 +289,6 @@ footer {
     padding: 0 1em;
     position: absolute; } }
 
-.grid-projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 800px; }
-
 @media only screen and (min-width: 1024px) {
   #projects {
     justify-content: center; }
@@ -381,6 +343,42 @@ footer {
     max-width: 1440px; }
   .card {
     width: 665px; } }
+
+footer {
+  align-items: center;
+  bottom: 0;
+  color: #004175;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  padding: 1em;
+  position: absolute;
+  right: 0; }
+
+.social-buttons {
+  display: flex;
+  justify-content: center; }
+
+.social-buttons a {
+  font-size: 1.9em;
+  padding: 1em;
+  color: black; }
+
+.social-buttons a:nth-child(4):hover {
+  color: #1da1f2; }
+
+.social-buttons a:nth-child(1):hover {
+  color: #f21d37; }
+
+.social-buttons a:nth-child(3):hover {
+  color: #0077b5; }
+
+.social-buttons a:nth-child(3):focus {
+  color: #0077b5; }
+
+.social-buttons a:nth-child(4):focus {
+  color: #1da1f2; }
 
 body {
   font-family: 'Ubuntu', sans-serif;
