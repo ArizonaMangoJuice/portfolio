@@ -3,10 +3,7 @@
 *{
   box-sizing: border-box;
 }
-html{
-  /* background: #707070; */
-  // font-family: 'Roboto', sans-serif;
-}
+
 body{
   margin: 0;
   min-height: 100vh;
@@ -30,13 +27,11 @@ h1{
 
 .anchor-text{
   font-size: 0;
-  // text-indent: -9999px;
 }
 
 
 main{
   display: flex;
-  // padding-bottom: 200px;  
   font-weight: bold;    
   flex-direction: column;
   margin: 0 auto;
@@ -80,13 +75,8 @@ nav{
   color: #004175;
 }
 
-/* bocy > * {
-  flex: 1 100%;
-} */
-
 header{
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   padding: 1em;
@@ -98,7 +88,6 @@ footer{
   bottom: 0;
   right: 0;
   left: 0;
-  /* background: #ededed; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,14 +111,12 @@ footer{
 .nav-button:hover{
   margin: .2em;
   padding: 1em;
-  /* background: #ededed; */
   color: #3f3f3f;
 }
 
 .nav-button:focus{
   margin: .2em;
   padding: 1em;
-  /* background: #ededed; */
   color: #004175;
   outline: 0; /* bad practice remove it for accessability reasons */
 }
@@ -144,10 +131,6 @@ footer{
   height: 150px;
   width: 150px;
   border-radius: 15%;
-  /* transform: translateX(100%);
-  transition: all 1000ms ease-in-out;
-  transition-duration: 5s; */
-  /* margin: auto; */
 }
 
 .projects{
@@ -181,7 +164,6 @@ footer{
   background-color: rgb(112, 112, 112);
   margin: 0 auto;
   text-decoration: none; 
-  /* border: 1px solid white; */
 }
 
 #logo{
@@ -201,25 +183,20 @@ footer{
 }
 
 .header{
-  /* background: #ededed; */
   display: flex;
   padding: .2em;
   width: 89.9%;
   margin: auto;
-  /* border: 1px solid #ededed; */
 }
 
 .project-one{
   border-radius: 4px;
-  /* border: 1px solid rgba(0,0,0,.01); */
   margin: 1.65em 0;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .project-two{
   border-radius: 4px;
-  /* border: 1px solid rgba(0,0,0,.01); */
-  // margin: 1.6em 0;
   box-shadow: 1px 1px 1px 1px rgba(0,65,117,0.80), 0 15px 12px 1px rgba(0,65,117,0.30);
 }
 
@@ -281,10 +258,6 @@ footer{
   color: #0077b5;
 }
 
-/* .social-buttons a:focus{
-  color: #898989;
-} */
-
 .social-buttons a:nth-child(3):focus{
   color: #0077b5;
 }
@@ -327,9 +300,6 @@ footer{
   margin: 0;
 }
 
-.content h2 {
-  // margin: .3em;
-}
 
 .blank-div{
   padding-bottom: 2.22447%;
@@ -339,7 +309,7 @@ footer{
   margin: 6vw 2vw;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 100px) {
   nav{
       width: 100%;
   }
@@ -373,7 +343,6 @@ footer{
 
 @media only screen and (min-width: 610px){
   main section{
-    /* border: 1px solid red; */
     width: 80%;
   }
 
@@ -383,9 +352,7 @@ footer{
   }
   
   #projects{
-      /* display: flex; */
       width: 100%;
-      /* border: 1px solid; */
       flex-direction: row;
       flex-wrap: wrap;
   }
@@ -411,10 +378,7 @@ footer{
   }
 
   .project-one{
-    /* background-size: 84.6%; */
-    /* background-position: 50% -5%; */
     border-radius: 4px;
-    /* border: 1px solid rgba(0,0,0,.01); */
     margin: 1.6em 0;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
@@ -436,12 +400,10 @@ footer{
   .test{
     width: 48%;    
     margin: .3vw 0.5vw;
-    /* border: 1px solid; */
   }
 
   .wrapper{
       width: 100%;
-      /* width: 499px;  this has to go to the ipad pro*/
   }
   
   .project-image{
@@ -465,7 +427,6 @@ footer{
 .grid-projects{
   display: flex;
   width: 800px;
-  /* border: 1px solid; */
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -473,31 +434,18 @@ footer{
 
 @media only screen and (min-width: 1024px){
     #projects{
-      /* display: flex;
-      width: 800px;
-      border: 1px solid;
-      flex-direction: row;
-      flex-wrap: wrap; */
-      /* padding: 2em; */
       justify-content: center;
     }
 
     .test{
-      /* display: inline-block; */
       width: 30%;
       margin: .3vw;
     }
 
     .project-link {
       display: block;
-      /* width: 50%; */
       margin: auto;
     }
-
-    /* .wrapper {
-      width: 300px;
-      height: 400px;
-      } */
 
     nav{
       justify-content: center;
@@ -516,7 +464,6 @@ footer{
 
     .project-one{
       border-radius: 4px;
-      /* border: 1px solid rgba(0,0,0,.01); */
       margin: 1.6em 0;
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     }
@@ -557,7 +504,6 @@ footer{
 
 @media only screen and (min-width: 1600px){
   .wrapper{
-      /* width: 665px; */
       justify-content: center;
   }
 
