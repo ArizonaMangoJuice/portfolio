@@ -186,6 +186,18 @@ nav{
   padding-bottom: 2.22447%;
 }
 
+.links{
+  display: flex;
+  justify-content: center;
+}
+
+.links a{
+  padding: 0 1em;
+  margin: 0 1em;
+  color: #004175;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
   nav{
       width: 100%;
