@@ -1,4 +1,4 @@
-// * 1. - Resets
+/*Resets */
 h3{
   line-height: 1.2em;
   letter-spacing: .02em;
@@ -17,7 +17,7 @@ p a{
   color: #004175;
   text-decoration: none;
 }
-// * 2. - Typography Baseline Styles
+/*Typography Baseline Styles */
 body{
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
@@ -25,7 +25,7 @@ body{
   letter-spacing: .04em;
   text-rendering: optimizeLegibility;
 }
-// * 5. - Header & Navigation
+ /*Header & Navigation */
 header{
   align-items: center;
   display: flex;
@@ -36,7 +36,6 @@ header{
 nav{
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
   width: 400px;
 }
 
@@ -62,7 +61,7 @@ nav{
 #logo{
   padding: 1.5em;
 }
-// * 6. - Footer
+ /*Footer */
 footer{
   align-items: center;
   color: #004175;
@@ -103,11 +102,32 @@ footer{
 .social-buttons a:nth-child(4):focus{
   color: #1da1f2;
 }
+ /*Media queries */
+@media only screen and (min-width: 100px) {
+  nav{
+      width: 100%;
+  }
 
-// * 8. - Content
+  header{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1em;
+  }
+
+  .social-buttons a {
+      color: black;
+      font-size: 1.1em;
+      padding: 1em;
+      text-decoration: none;
+  }
+}
+/* Content */
 #projects{
   display: none;
 }
+
 .views-content{
   box-sizing: border-box;
   margin-bottom: 3vw;
@@ -171,26 +191,5 @@ img{
 
 .headline-bio{
   max-width: 80%;
-}
-
-// * 7.Media queries
-@media only screen and (min-width: 100px) {
-  nav{
-      width: 100%;
-  }
-
-  header{
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 1em;
-  }
-
-  .social-buttons a {
-      color: black;
-      font-size: 1.1em;
-      padding: 1em;
-      text-decoration: none;
-  }
+  margin: auto;
 }
