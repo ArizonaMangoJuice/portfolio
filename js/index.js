@@ -13,15 +13,18 @@ function openSection(sectionName) {
 
   if ($(window).width() > 610 && name === 'projects') {
     if (name === 'projects') {
-      $(`#${name}`).css('display', 'flex');
+      $(`#${name}`)
+        .css('display', 'flex');
       $(`#${name}`)
         .addClass('.grid-projects');
     } else {
-      $(`#${name}`).css('display', 'block');
+      $(`#${name}`)
+        .css('display', 'block');
     }
   } else {
 
-    $(`#${name}`).css('display', 'block');
+    $(`#${name}`)
+      .css('display', 'block');
 
   }
 }
