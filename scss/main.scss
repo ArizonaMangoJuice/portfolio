@@ -5,24 +5,24 @@
 }
 
 body{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  letter-spacing: .04em;
+  line-height: 1.8em;
   margin: 0;
   min-height: 100vh;
   position: relative;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
-  line-height: 1.8em;
-  letter-spacing: .04em;
   text-rendering: optimizeLegibility;
 }
 
 h1{
   display: block;
   font-size: 2em;
+  font-weight: bold;
   -webkit-margin-before: 0.67em;
   -webkit-margin-after: 0.67em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-  font-weight: bold;
 }
 
 .anchor-text{
@@ -31,14 +31,14 @@ h1{
 
 
 main{
+  align-items: center;
   display: flex;
-  font-weight: bold;    
-  flex-direction: column;
+  flex: 1 100%;
+  flex-direction: column;  
+  font-weight: bold;  
+  justify-content: center;
   margin: 0 auto;
   min-height: 60vh;
-  flex: 1 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 .relative{
@@ -50,24 +50,24 @@ main{
 }
 
 .absolute-card{
+  background: rgba(0,65,117,.9);
+  color: white;
+  height: 100%;
   position: absolute;
   top: 0;
   width: 100%;
-  color: white;
-  height: 100%;
-  background: rgba(0,65,117,.9);
 }
 
 .span-absolute{
+  left: 43%;
   position: absolute;
   top: 50%;
-  left: 43%;
 }
 
 nav{
+  align-items: center;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   width: 400px;
 }
 
@@ -76,94 +76,94 @@ nav{
 }
 
 header{
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1em;
 }
 
 footer{
+  align-items: center;
+  bottom: 0;
+  color: #004175;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
   padding: 1em;    
   position: absolute;
-  bottom: 0;
   right: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #004175;
-  flex-direction: column;
 }
 
 .nav-button{
-  margin: .2em;
-  padding: 1em;
   background: #fff;
-  color: black;
   border: 2px solid #fff;
-  padding: 1em;
+  color: black;
   cursor: pointer;
   font-size: 1em;
+  margin: .2em;
   min-width: 100px;
+  padding: 1em;
   text-decoration: none;
 }
 
 .nav-button:hover{
+  color: #3f3f3f;
   margin: .2em;
   padding: 1em;
-  color: #3f3f3f;
 }
 
 .nav-button:focus{
-  margin: .2em;
-  padding: 1em;
   color: #004175;
+  margin: .2em;
   outline: 0; /* bad practice remove it for accessability reasons */
+  padding: 1em;
 }
 
 .headline-bio{
-  padding: 1.5em;
   color: black;
+  padding: 1.5em;
 }
 
 .headline-bio img {
+  border-radius: 15%;
   display: block;
   height: 150px;
   width: 150px;
-  border-radius: 15%;
 }
 
 .projects{
-  padding: 1em;
   color: black;
   display: flex;
   flex-direction: column;
+  padding: 1em;
 }
 
 .project-grid-title{
+  color: #fff;
   display: block;
   font-size: 1.5em;
+  font-weight: bold;
   -webkit-margin-before: 0.83em;
   -webkit-margin-after: 0.83em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-  font-weight: bold;
-  color: #fff;
 }
 
 #icon{
-  text-shadow: none;
+  background-color: rgb(112, 112, 112);
+  border-radius: 6%;
+  color: rgb(255, 255, 255);
   display: block;
   font-size: 64px;
-  color: rgb(255, 255, 255);
   height: 80px;
-  width: 80px;
   line-height: 90px;
-  border-radius: 6%;
-  text-align: center;
-  background-color: rgb(112, 112, 112);
   margin: 0 auto;
+  text-align: center;
   text-decoration: none; 
+  text-shadow: none;
+  width: 80px;
+
 }
 
 #logo{
@@ -270,16 +270,16 @@ footer{
     padding: 1.5em;
 }
 
-.triangle{
-  width: 0;
-  height: 0;
-  border-top: 40px solid transparent;
-  border-bottom: 0px solid transparent;
-  border-right: 40px solid #d3d3d3;
-  position: absolute;
-  bottom: 42.9%;;
-  z-index: -1;
-}
+// .triangle{
+//   bottom: 42.9%;;
+//   border-top: 40px solid transparent;
+//   border-bottom: 0px solid transparent;
+//   border-right: 40px solid #d3d3d3;
+//   height: 0;
+//   position: absolute;
+//   width: 0;
+//   z-index: -1;
+// }
 
 .wrapper{
     width: 288px;
@@ -290,16 +290,15 @@ footer{
 }
 
 .content{
-  border-top: 2px solid #004175;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   background: #004175;
   color: white;
-  padding: 3px;
+  border-top: 2px solid #004175;
+  bottom: 0;
   margin: 0;
+  padding: 3px;
+  position: absolute;
+  width: 100%;
 }
-
 
 .blank-div{
   padding-bottom: 2.22447%;
@@ -320,24 +319,24 @@ footer{
   }
 
   .project-image{
-      width: 100%;
       height: 400px;
       object-fit: fill;
+      width: 100%;
   }
 
   header{
+      align-items: center;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
       padding: 1em;
   }
 
   .social-buttons a {
-      font-size: 1.1em;
-      padding: 1em;
-      color: black;
-      height: 80px;
+    color: black;
+    font-size: 1.1em;
+    height: 80px;
+    padding: 1em;
   }
 }
 
@@ -347,14 +346,14 @@ footer{
   }
 
   .section {
-    max-width: 100%;
     margin: 0;
+    max-width: 100%;
   }
   
   #projects{
-      width: 100%;
-      flex-direction: row;
-      flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   nav{
@@ -362,35 +361,35 @@ footer{
   }
 
   .triangle{
-      bottom: 28.6%;
-      z-index: -1;
+    bottom: 28.6%;
+    z-index: -1;
     }
 
   .card{
+    height: 550px;
     margin: 1em;
     width: 499px;
-    height: 550px;
   }
 
   .section{
-    max-width: 599px;
     margin: auto;
+    max-width: 599px;
   }
 
   .project-one{
     border-radius: 4px;
-    margin: 1.6em 0;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin: 1.6em 0;
   }
 
   .data{
-      top: 392px;
-      background: #ededed;
-      color: #3f3f3f;
+    background: #ededed;
+    color: #3f3f3f;
+    top: 392px;
   }
 
   .card-link a{
-      color: #3f3f3f;
+    color: #3f3f3f;
   }
 
   .card-link a:first-child {
@@ -398,27 +397,28 @@ footer{
   }
   
   .test{
-    width: 48%;    
     margin: .3vw 0.5vw;
+    width: 48%;    
   }
 
   .wrapper{
-      width: 100%;
+    width: 100%;
   }
   
   .project-image{
-      width: 100%;
-      height: auto;
-      object-fit: fill;    }
+    height: auto;
+    object-fit: fill;
+    width: 100%;    
+  }
 
   .content {
-      border-top: 2px solid #004175;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background: #004175;
-      color: white;
-      padding: 0 1em;
+    background: #004175;
+    border-top: 2px solid #004175;
+    bottom: 0;
+    color: white;    
+    width: 100%;
+    padding: 0 1em;
+    position: absolute;
   }
   
 }
@@ -426,9 +426,9 @@ footer{
 
 .grid-projects{
   display: flex;
-  width: 800px;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 800px;
 }
 
 
@@ -438,8 +438,8 @@ footer{
     }
 
     .test{
-      width: 30%;
       margin: .3vw;
+      width: 30%;
     }
 
     .project-link {
@@ -452,30 +452,30 @@ footer{
     }
 
     .card{
-      width: 665px;
-      margin: 1em;
       height: 730px;
+      margin: 1em;
+      width: 665px;
     }
 
     .section{
-      max-width: 100%;
       margin: auto;
+      max-width: 100%;
     }
 
     .project-one{
       border-radius: 4px;
-      margin: 1.6em 0;
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+      margin: 1.6em 0;
     }
 
     .data{
-        top: 572px;
-        background: #ededed;
-        color: #3f3f3f;
+      background: #ededed;
+      color: #3f3f3f;
+      top: 572px;
     }
 
     .card-link a{
-        color: #3f3f3f;
+      color: #3f3f3f;
     }
 
     .card-link a:first-child {
@@ -488,11 +488,11 @@ footer{
     }
 
     .wrapper{
-        width: 100%;
+      width: 100%;
     }
   
     main section {
-        width: 80%;
+      width: 80%;
     }
 
     .project-image{
@@ -512,17 +512,17 @@ footer{
   }
 
   nav{
-      justify-content: center;
+    justify-content: center;
   }
 
   #projects{
-      flex-direction: row;
-      flex-wrap: wrap;
-      max-width: 1440px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1440px;
   }
 
   .card{
-      width: 665px;
+    width: 665px;
   }
 }
 
