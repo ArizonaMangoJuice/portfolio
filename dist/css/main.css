@@ -401,44 +401,44 @@ body {
   text-rendering: optimizeLegibility; }
 
 .views-content {
+  box-sizing: border-box;
   margin-bottom: 3vw;
-  padding-right: 3vw;
-  padding-left: 3vw;
-  width: auto;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   margin: 3vw auto;
-  box-sizing: border-box; }
+  padding-right: 3vw;
+  padding-left: 3vw;
+  width: auto; }
 
 img {
   width: 100%; }
 
 .project-title {
+  color: #333;
   line-height: 1.2em;
   letter-spacing: 0em;
   text-transform: none;
-  color: #333;
   text-align: center; }
 
 p {
-  word-wrap: break-word;
   font-size: 20px;
   line-height: 1.8em;
   letter-spacing: .04em;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word; }
 
 p a {
   color: #004175;
   text-decoration: none; }
 
 .outer-main-content {
-  width: 83.3333%;
-  margin: auto; }
+  margin: auto;
+  width: 83.3333%; }
 
 .inner-main-content {
-  width: 83.3333%;
-  margin: auto; }
+  margin: auto;
+  width: 83.3333%; }
 
 h3 {
   line-height: 1.2em;
@@ -452,22 +452,22 @@ h3 {
   justify-content: space-around; }
 
 footer {
-  padding: 1em;
-  display: flex;
-  position: initial;
-  justify-content: center;
   align-items: center;
   color: #004175;
-  flex-direction: column; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  position: initial; }
 
 .social-buttons {
   display: flex;
   justify-content: center; }
 
 .social-buttons a {
+  color: black;
   font-size: 1.9em;
-  padding: 1em;
-  color: black; }
+  padding: 1em; }
 
 .social-buttons a:nth-child(4):hover {
   color: #1da1f2; }
@@ -485,33 +485,33 @@ footer {
   color: #1da1f2; }
 
 header {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1em; }
 
 nav {
+  align-items: center;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   width: 400px; }
 
 .nav-focus {
   color: #004175; }
 
 #icon {
-  text-shadow: none;
+  background-color: #707070;
+  border-radius: 6%;
+  color: white;
   display: block;
   font-size: 64px;
-  color: white;
   height: 80px;
-  width: 80px;
   line-height: 90px;
-  border-radius: 6%;
-  text-align: center;
-  background-color: #707070;
   margin: 0 auto;
-  text-decoration: none; }
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  width: 80px; }
 
 #logo {
   padding: 1.5em; }
@@ -527,22 +527,22 @@ nav {
   justify-content: center; }
 
 .links a {
-  padding: 0 1em;
-  margin: 0 1em;
   color: #004175;
+  margin: 0 1em;
+  padding: 0 1em;
   text-decoration: none; }
 
 @media only screen and (min-width: 100px) {
   nav {
     width: 100%; }
   header {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     padding: 1em; }
   .social-buttons a {
+    color: black;
     font-size: 1.1em;
     padding: 1em;
-    color: black;
     text-decoration: none; } }
