@@ -18,10 +18,12 @@
             </a> 
         </section>
         <nav role="navigation">
-                <a href="index.html"><button class="nav-button">Projects</button></a>
-            </nav>
+                <button class="nav-button">Projects</button>
+                <button class="nav-button">Lol Improver</button>
+                <button class="nav-button">About</button>     
+        </nav>
   </header>
-  <div class="views-content">
+  <div class="views-content section" id="lolimprover">
     <div class="image-block">
       <div>
         <img src="img/lolImprover.png" alt="banner picture of the app LoL Improver">
@@ -103,10 +105,77 @@
           </div>
         </div>
        </div>
-    </div>
-    <div>
-        <div class="blank-div">&nbsp;</div>
-     </div>
+  </div>
+  <section role="region" class="projects section hidden" id='projects'>
+    <article class='test'>
+        <section class='wrapper project-two relative'>
+            <a href="lol-improver.html" class="project-link">
+                <img class='project-image' src="img/lolImproverPortfolio2.png" alt="lol-improver image">
+            </a>
+            <section class="absolute-card hidden">
+                <span class="span-absolute">Lol-improver</span>
+            </section>
+            <section class='content'>
+                <span class="project-grid-title">Lol-improver</span>                        </section>
+        </section>
+    </article>
+    <article class='test'>
+        <section class='wrapper project-two relative'>
+            <a href="siSenor.html" class="project-link">
+                <img class='project-image' src="img/siSenor2.png" alt="lol-improver image">
+            </a>
+            <section class="absolute-card hidden">
+                <span class="span-absolute">Si Senor</span>
+            </section>
+            <section class='content'>
+                <span class="project-grid-title">Si Senor</span>
+            </section>
+        </section>
+    </article>
+    <article class='test'>
+            <section class='wrapper project-two relative'>
+                <a href="bonus-kid.html" class="project-link">
+                    <img class='project-image' src="img/bonus-kid2.png" alt="lol-improver image">
+                </a>
+                <section class="absolute-card hidden">
+                    <span class="span-absolute">Bonus Kid</span>
+                </section>
+                <section class='content'>
+                    <span class="project-grid-title">Bonus Kid</span>
+                </section>
+            </section>
+        </article>
+  </section>
+  <section class="headline-bio section hidden" id='about'>
+      <img src="img/me.png" alt="A picture showing isaels face">
+      <h1>Hi, my name is
+          <span>Isael Lizama</span>
+      </h1>
+      <h2>I'm a
+          <span>full stack</span> developer
+      </h2>
+      <p>
+          Being a web developer taught me how to think critically about what im going to do and how i'm going to do it.
+          The idea of creating something from scratch that didn't exist before is amazing.
+          One of the best things about being a web developer is, new technologies come out and make the developing more interesting.
+          You'll never be bored.
+          Also, the feeling that you can work as a team, create an app that will help multiple people is one of the best feelings I have ever felt. 
+          When i'm not developing I also love doing anything that is competitive, building and fixing computers,
+          and hanging out with friends.
+      </p>
+      <p>
+          If you ever want to chat, hangout or have something awesome you want to show me. Email me.
+      </p>
+      <p>
+          <a href="mailto:hello@isaellizama.com">hello@isaellizama.com</a>
+      </p>
+      <p>
+          <a href="img/IsaelResume.pdf" download>Resume</a>
+      </p>
+  </section>
+  <div>
+    <div class="blank-div">&nbsp;</div>
+  </div>
  </div>
  <footer role="contentinfo">
   <article class="social-buttons">
@@ -117,5 +186,7 @@
   </article>
   <p>&copy; 2018 Isael Lizama</p>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
