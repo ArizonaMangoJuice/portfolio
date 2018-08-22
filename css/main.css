@@ -142,6 +142,7 @@ header{
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   font-size: 1em;
+  padding: 0 1em;
 }
 
 #icon{
@@ -241,12 +242,17 @@ header{
   background: #004175;
   color: white;
   border-top: 2px solid #004175;
-  bottom: 0;
-  margin: 0;
+  /* bottom: 0; */
+  margin-top: -.8em;
   padding: 3px;
-  position: absolute;
+  /* position: absolute; */
+  height: 290px;
   width: 100%;
-  height: 280px;
+}
+
+.content p{
+  padding: 0 1em;
+  margin: 0;
 }
 
 .blank-div{
@@ -255,7 +261,8 @@ header{
 
 .project-card{
   margin: auto;
-  height: 610px;
+  margin-bottom: 2em;
+  /* height: 610px; */
 }
 
 .grid-projects{
@@ -399,9 +406,9 @@ footer{
   }
   
   .project-card{
-    margin: .3vw 0.5vw;
+    /* margin: .3vw 0.5vw; */
     width: 48%;    
-    height: 610px;
+    /* height: 610px; */
   }
 
   .wrapper{
@@ -417,11 +424,15 @@ footer{
   .content {
     background: #004175;
     border-top: 2px solid #004175;
-    bottom: 0;
+    /* bottom: 0; */
     color: white;    
     width: 100%;
     padding: 0 1em;
-    position: absolute;
+    /* position: absolute; */
+  }
+
+  .content p {
+    font-size: .7em;
   }
   
 }
@@ -432,8 +443,9 @@ footer{
     }
 
     .project-card{
-      margin: .3vw;
+      /* margin: .3vw; */
       width: 30%;
+      /* height: 750px; */
     }
 
     .project-link {
@@ -492,6 +504,10 @@ footer{
     .project-image{
       height: auto;
       object-fit: fill;
+    }
+
+    .content p {
+      font-size: .8em;
     }
 
 }
